@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Timer & Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+    <p class="title">Online Timer & Stopwatch</p>
+
+    <div class="time">
+        <span id="min">00</span> :
+        <span id="sec">00</span> :
+        <span id="cs">00</span>
+    </div>
+
+    <div class="labels">
+        <span>Minutes</span>
+        <span>Seconds</span>
+        <span>Centiseconds</span>
+    </div>
+
+   <div class="buttons">
+    <button class="start" onclick="start()">Start</button>
+    <button class="pause" onclick="pause()">Pause</button>
+    <button class="lap" onclick="lap()">Lap</button>
+    <button class="reset" onclick="reset()">Reset</button>
+</div>
+
+
+<div class="laps-container">
+    <h3>Lap Times</h3>
+    <ul id="laps"></ul>
+</div>
+
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

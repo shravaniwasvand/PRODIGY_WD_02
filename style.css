@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("stopwatchback.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.card{
+    background: #2a0e3f;
+    color: white;
+    width: 450px;
+    padding: 30px;
+    border-radius: 18px;
+    text-align: center;
+}
+
+.title{
+    font-size: 14px;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+.time{
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.labels{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 30px 25px;
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.buttons button{
+    padding: 8px 18px; /* smaller & uniform */
+    border: none;
+    border-radius: 20px;
+    font-size: 13px;
+    cursor: pointer;
+    color: white;
+    min-width: 65px; /* fixed width */
+}
+
+.start {
+    background: #00c853;
+}
+
+.pause {
+    background: #ff5fa2;
+}
+
+.lap {
+    background: #2979ff;
+    padding: 6px 10px;    /* smaller button */
+    font-size: 12px;      /* smaller font */
+    min-width: 40px;      /* prevents large width */
+}
+
+
+.reset {
+    background: #5f5f5f;
+}
+
+
+
+.buttons button:hover{
+    opacity: 0.85;
+}
+
+.laps-container{
+    margin-top: 20px;
+    background: #1b0730;
+    padding: 15px;
+    border-radius: 12px;
+    color: #fff;
+    text-align: left;
+}
+
+.laps-container h3{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.laps-container {
+    margin-top: 15px;
+    width: 100%;
+    padding: 0;          
+    background: none;    
+    border-radius: 0;   
+    color: white;
+    text-align: center;  
+}
+
+.laps-container h3{
+    text-align: center;
+    margin: 0 auto 10px auto; 
+    font-size: 16px;          
+    width: fit-content;        
+    background: #00000066;     
+    padding: 6px 12px;        
+    border-radius: 8px;       
+}
+
+
+#laps li{
+    list-style: none;
+    padding: 6px;
+    border-bottom: 1px solid #555;
+    font-size: 14px;
+}
+
+.lap-times {
+    width: 60%;          /* make it narrower */
+    padding: 10px 15px;  /* reduce height */
+    font-size: 18px;     /* smaller text */
+    border-radius: 10px; /* slightly rounded */
+    margin: 15px auto;   /* center it */
+}
+
+
